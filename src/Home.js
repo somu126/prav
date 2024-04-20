@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Home.css'; 
 import Line from './charts/Line';
 import Hoi from './charts/Hoi';
@@ -10,12 +10,14 @@ import Hero from './home/Hero';
 import Info from './home/Info';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Footer from './home/Footer';
+import Doc from './home/Doc';
 const Home = () => {
    
   return (
-    <div> <Navbar/>
-    <Hero/>
+    <div className='h'> <Navbar/>
+     <Hero/>
     <Info/>
+    <Doc/>
     <Footer/>
   
     </div>

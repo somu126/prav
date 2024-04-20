@@ -11,6 +11,7 @@ import Scatterplot from './charts/Scatterplot';
 import Buble from './charts/Buble';
 import Graphs from './Graphs ';
 import Register from './Register';
+import Har from './Har';
 
 const App = () => {
   return (

@@ -1,31 +1,84 @@
-.features{
-    padding: 30px 12px;
-    font-size: 22px;
-    background: linear-gradient(to right, #ECF2FF, #FBFCFF);
+#selectionbrances{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+  background: white;
+  animation: slide-up 2s;
 }
-  .row{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 50px 0;
-  }
-  .text-col{
-    flex-basis:50%;
-    margin-bottom:20px;
-  }
-  .img-cal{
-    flex-basis:50%;
-    margin-bottom:10px;
-    background: linear-gradient(to right, #ECF2FF, #FBFCFF);
+h1{
+  animation: slide-up 2s;
 }
- .img-cal img{
-    display: block;
-    width: 100%;
-    margin: auto;
-    background: linear-gradient(to right, #ECF2FF, #FBFCFF);
+@keyframes slide-up{
+  from{
+      opacity: 0.2;
+      line-height: 500px;
+  }
+  to{
+      opacity: 1;
+      line-height: 25px;
+  }
 }
 
+.course img{
+  width:100%;
+  border-top-left-radius:  20px;
+  border-top-right-radius:20px ;
+}
+.course h2{
+  text-align: center;
+  font-family: Verdana;
+}
+.course p{
+  text-align: center;
+}
+h1{
+  text-align: center;
+
+}
+.course{
+  border-radius: 20px;
+  border: 1px solid gray;
+  margin-bottom: 40px;
+  box-shadow: 2px 2px 25px gray;
+
+}
+.fig{
+  padding:20px;
+}
+
+@media only screen and (max-width: 600px) {
+   .course{
+      width: 80%;
+   }
+
+  }
+
+
+@media only screen and (min-width: 600px) {
+  .course{
+      width: 80%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .course{
+      width: 50%;
+  }
+}
+
+
+@media only screen and (min-width: 992px) {
+  .course{
+      width: 20%;
+  }
+}
+
+
+@media only screen and (min-width: 1200px) {
+  .course{
+      width:20%;
+  }
+}
  
  
  

@@ -44,7 +44,7 @@ function Hero() {
           </p>
         </div>
         <div className="hero-image-section">
-        <img  className="hero-image1" src="../images/image.png" alt="" />
+        <img  className="hero-image1" src="images\main.jpeg"/>
         </div>
 
         

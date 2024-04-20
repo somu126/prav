@@ -116,12 +116,12 @@ function Navbar() {
           </li>
           <li>
           <a onClick={openNav} href="#chart">
-          <button onClick={toggleDropdown}>
+          <button className="dropbtn" onClick={toggleDropdown}>
         charts
       </button>
       {isOpen && (
-        <div   onScroll={handleScroll}>
-          <div  onClick={scrollUp}>
+        <div className=" mobile-dropdown-content" id="dropdown-content" onScroll={handleScroll}>
+          <div className=" mobile-scroll-up" onClick={scrollUp}>
             &#9650; {/* Up arrow */}
           </div>
           <a href="line">line chart</a>
@@ -132,11 +132,12 @@ function Navbar() {
           <a href="scatter">scatter plot</a>
           <a href="graph">all charts</a>
           
-          <div  onClick={scrollDown}>
+          <div className=" mobile-scroll-down" onClick={scrollDown}>
             &#9660; {/* Down arrow */}
           </div>
         </div>
       )}
+          
               
             
           

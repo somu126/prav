@@ -1,8 +1,11 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 import { useState } from 'react';
 import { Link } from "react-router-dom";
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import './login.css';
+import { faWeightScale } from '@fortawesome/free-solid-svg-icons';
 
 const Login = () => {
     const [email, setEmail] = useState();
@@ -30,12 +33,12 @@ const Login = () => {
 
     return (
         <div>
-            <div className="d-flex justify-content-center align-items-center text-center vh-100" style= {{backgroundImage : "linear-gradient(#00d5ff,#0095ff,rgba(93,0,255,.555))"}}>
-                <div className="bg-white p-3 rounded" style={{width : '40%'}}>
-                    <h2 className='mb-3 text-primary'>Login</h2>
+            <div className='wrapper'>
+                <div className="bg">
+                    <h1 className='mb1'>Login</h1>
                     <form onSubmit={handleSubmit}>
-                        <div className="mb-3 text-start">
-                            <label htmlFor="exampleInputEmail1" className="form-label">
+                        <div className="input-box">
+                        <label htmlFor="exampleInputEmail1" className="form-label">
                                 <strong>Email Id</strong>
                             </label>
                             <input 
@@ -47,7 +50,7 @@ const Login = () => {
                                 required
                             /> 
                         </div>
-                        <div className="mb-3 text-start">
+                        <div className="inputbox">
                             <label htmlFor="exampleInputPassword1" className="form-label">
                                 <strong>Password</strong>
                             </label>
@@ -60,11 +63,15 @@ const Login = () => {
                                 required
                             />
                         </div>
-                        <button type="submit" className="btn btn-primary">Login</button>
+                        <br>
+                        </br>
+                        <button type="submit" className="btn ">Login</button>
                     </form>
+                    <br>
+                    </br>
                     {/* TO add ' appostopee */}
-                    <p className='container my-2'>Don&apos;t have an account?</p>
-                    <Link to='/register' className="btn btn-secondary">Register</Link>
+                    <p className='remember-forgot'>Don&apos;t have an account?</p>
+                     <Link to='/register' className='.register-link' >Register</Link>
                 </div>
             </div>
         </div>

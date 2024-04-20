@@ -1,4 +1,6 @@
-
+body{
+    background: black;
+}
 .navbar-section {
     padding: 0 22px;
     display: flex;
@@ -183,12 +185,20 @@
 .mobile-navbar-links li a:hover {
     color: #0cc2ea;
 }
+
+
 /* Responsive */
 @media screen and (max-width: 900px) {
     .navbar-btn, .navbar-items {
-        display: none;
+        display:none;
     }
     .mobile-nav {
         display: block;
     }
+    .mobile-scroll-up{
+        display: flex;
+        flex-direction: column;
+    }
+   
+
 }
