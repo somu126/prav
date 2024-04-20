@@ -14,7 +14,7 @@ function Doc() {
            <img src="images\line.jpg" />
            <div className="fig">
                <h2>Line chat</h2>
-               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque veritatis explicabo maiores illum deserunt, consequatur voluptatem inventore sint natus, officiis ad dolorem aspernatur sapiente dolorum voluptatum vitae commodi optio minus! </p>
+               <p>It is a chart that shows a line joining several points or a line that shows the relation between the points. The graph represents quantitative data between two changing variables with a line or curve that joins a series of successive data points. </p>
            </div>
        </div>
        <div className="course">
